@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	<title>Sayı Tahmin Oyunu</title>
+</head>
+<body>
+	<div class="container my-4 d-flex justify-content-center">
+		<div class="col-md-7">
+			<div class="card">
+				<div class="card-header font-weight-bold">Sayı Tahmin Oyunu</div>
+				<div class="card-body">
+					<form id="form" class="needs-validation">
+						<div class="form-group">
+							<label for="number" >Sayı</label>
+							<input type="text" class="form-control" id="number" placeholder="0 - 10 arası bir sayı girin." pattern="[0-9]*" required>
+							<div class="invalid-feedback">
+								Lütfen bir sayı girdiğinizden emin olun.
+							</div>
+						</div>
+						<div class="text-center">
+							<button type="button" class="btn btn-info w-50" value="Hesapla" onclick="processing()">Tahmin Et</button>
+						</div>
+					</form>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted font-weight-bold" id="message">*****</small>
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</html>
